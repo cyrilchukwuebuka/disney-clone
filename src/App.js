@@ -1,5 +1,6 @@
 import { Route, BrowserRouter as Router, Routes, Outlet } from 'react-router-dom';
 import './App.css';
+import Detail from './components/Detail';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home';
@@ -12,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            {/* <Route path='repo/:repoID' element={<RepoDetail />} /> */}
+            <Route path='detail' element={<Detail />} />
             <Route path='*' element={<PageNotFound />} />
           </Route>
         </Routes>
