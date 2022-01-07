@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes, Outlet } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -28,8 +28,7 @@ const Layout = () => {
     <div className='app__layout'>
       <Header />
       <main className='app__container'>
-      App
-        {/* <Outlet /> */}
+        <Outlet />
       </main>
       <Footer />
     </div>
